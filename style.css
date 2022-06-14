@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER - topo do site */
+.header{
+    height: 100px;
+    background-color: purple;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header .navbar h1{
+    margin: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+.navbar ul {
+    display: flex;
+}
+.header .navbar li{
+    list-style: none;
+    margin: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+/* MAIN */
+.principal{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 400px auto;
+    
+}
+.principal .texto{
+    margin: 12px 0;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+ }
+.principal #cpf{
+    width: 400px;
+    height: 60px;
+    border-radius: 35px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; 
+    border: 2px solid;
+}
+.principal .button{
+    width: 150px;
+    border-radius: 35px;
+    border: 2px solid;
+    font-size: 24px;
+    background-color: #32CD32;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.principal .button:hover{
+    background-color: green;
+}
