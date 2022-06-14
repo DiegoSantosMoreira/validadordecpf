@@ -2,7 +2,7 @@
 
 <p> 
   Projeto de página WEB para validar o CPF com base no algoritimo da Receita Federal do Brasil.
-  Verififca o primeiro e segundo dígito do CPF, bem como a ocorrência de caracteres repetidos, 
+  Verifica o primeiro e segundo dígito do CPF, bem como a ocorrência de caracteres repetidos, 
   informando através de um alert se o CPF digitado é válido ou não.
  </p>
  
