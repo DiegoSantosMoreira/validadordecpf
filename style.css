@@ -71,3 +71,71 @@
 .principal .button:hover{
     background-color: green;
 }
+/* RESPONSIVIDADE */
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+    body{
+        background-color: antiquewhite;
+    }
+    .header{
+        background-color: purple;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .header .navbar ul {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        background: purple;
+        width: 100%;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header .navbar li{
+        font-size: 16px;
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .button{
+        height: 60px;
+     }
+}  
+@media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    body{
+        background-color: antiquewhite;
+    }
+    .header .navbar ul {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        background: purple;
+        width: 100%;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .header .navbar li{
+        font-size: 16px;
+    }
+    .header{
+        background-color: purple;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center; 
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .button{
+        height: 60px;
+     }
+}
