@@ -55,7 +55,12 @@ mascaraCPF.addEventListener('keypress', () => {
 btn.addEventListener('click', function validar(){
     let cpf = document.getElementById('cpf').value.replace(/[^0-9]/g,'');
     if(cpf.length != 11){
-        alert("Digite o CPF completo!")
+        //alert("Digite o CPF completo!")
+        Swal.fire({
+            icon: 'info',
+            
+            text: 'CPF Incompleto! Certifique-se de digitar 11 algarismos!'
+            })
     }else{
     let cpfConvertido = cpf.split('').map((e) => parseInt(e));
     let primeiroDigito = validarPrimeiroDigito(cpfConvertido);
