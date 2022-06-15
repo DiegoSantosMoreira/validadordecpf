@@ -68,9 +68,19 @@ btn.addEventListener('click', function validar(){
     console.log(caracterRepetido,3);
 
     if (primeiroDigito && segundoDigito && caracterRepetido){
-        alert("CPF válido");
+        //alert("CPF válido");
+        Swal.fire({
+            icon: 'success',
+            
+            text: 'CPF Válido!'
+            })
     }else{
-        alert("CPF inválido");
+        //alert("CPF inválido");
+        Swal.fire({
+            icon: 'error',
+            
+            text: 'CPF Inválido!'
+            })
     }
 }
 })
