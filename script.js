@@ -42,14 +42,24 @@ function validarCaracterRepetido(cpfConvertido){
     return diferente;
 }
 
-mascaraCPF.addEventListener('keypress', () => {
-     let mascaraLenght = mascaraCPF.value.length;
+mascaraCPF.addEventListener('keydown', function (e) {
+    if ((((e.keyCode < 48 || e.keyCode > 105)) || !(e.keyCode > 57 && e.keyCode < 96))){
+        let mascaraLenght = mascaraCPF.value.length;
 
      if(mascaraLenght === 3 || mascaraLenght === 7){
          mascaraCPF.value += ".";
      }else if(mascaraLenght === 11){
          mascaraCPF.value += "-";
      }
+   }
+   else{
+    Swal.fire({
+        icon: 'info',
+        
+        text: 'O campo aceita apenas números!'
+        })
+    e.preventDefault();
+    }
 })
 
 btn.addEventListener('click', function validar(){
